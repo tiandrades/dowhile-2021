@@ -28,7 +28,7 @@ export function MessageList() {
   const [messages, setMessages] = useState<Message[]>([]);
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    setInterval(() => {
       if (messagesQueue.length > 0) {
         setMessages(prevState => [
           messagesQueue[0],
